@@ -1,0 +1,53 @@
+{{ 'example-section.css' | asset_url | stylesheet_tag }}
+
+<div class="example-section">
+  <h2 class="example-section__title">{{ section.settings.text }}
+  </h2>
+  <p class="example-section__title">{{ section.settings.description }}
+  </p>
+  <img src="{{ section.settings.image | image_url }}"/>
+bababababab
+  <ul>
+    {% for block in section.blocks %}
+      <p>{{ block.settings.heading }}</p>
+    {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+  {
+    "name": "Example Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Title",
+        "default": "default text"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+      }, {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Headings",
+            "label": "Title"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
