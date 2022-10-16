@@ -1,0 +1,66 @@
+{{ 'card-section.css' | asset_url | stylesheet_tag }}
+
+<div class="card-section">
+        <h1 class="card-section__title">{{ section.settings.text }}/h1>
+        <div class="card-section__cards">
+            <div class="card">
+                <div  class="card__icon"><img src="./images/globe-icon.png" alt=""></div>
+                <div class="card__titles">
+                    <p>Card Title<p>
+                    <p><i>Card Subtitle</i></p>
+                </div>
+                <div class="card__text"><p>You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers.</p></div>
+            </div>
+        </div>
+
+<div class="example-section">
+  <h2 class="example-section__title">{{ section.settings.text }}
+  </h2>
+  <p class="example-section__title">{{ section.settings.description }}
+  </p>
+  <img src="{{ section.settings.image | image_url }}"/>
+bababababab
+  <ul>
+    {% for block in section.blocks %}
+      <p>{{ block.settings.heading }}</p>
+    {% endfor %}
+  </ul>
+</div>
+
+{% schema %}
+  {
+    "name": "Card Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Title",
+        "default": "Section Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card",
+        "name": "Card",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Headings",
+            "label": "Title"
+          }, {
+        "type": "image_picker",
+        "id": "card-icon",
+        "label": "Image"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description",
+        "default": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+      }
+        ]
+      }
+    ]
+  }
+{% endschema %}
