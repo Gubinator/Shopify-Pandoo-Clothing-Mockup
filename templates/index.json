@@ -7,54 +7,51 @@
         "description": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "banner-section": {
+      "type": "banner-section",
+      "settings": {
+        "text": "default text werwerewr",
+        "description": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+      
+      }
+    },
+    "cards-section": {
+      "type": "cards-section",
+      "settings": {
+        "text": "default text werwerewr"
+      }, 
       "blocks": {
         "heading": {
-          "type": "heading",
+          "type": "card-title",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
+            "text": "Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store."
           }
         },
-        "text": {
-          "type": "text",
+        "heading2": {
+          "type": "card-subtitle",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "text": "Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store."
           }
         },
-        "button": {
-          "type": "buttons",
+        "description": {
+          "type": "card-description",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "icon":{
+          "type":"card-icon",
+          "settings":{
+            "image": "{{ shop.brand.cover_image }}"
           }
         }
       },
       "block_order": [
+        "icon",
         "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "{{ shop.brand.cover_image }}",
-        "image_2": "shopify:\/\/shop_images\/panda2.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
+        "heading2",
+        "description"
+      ]
     },
     "rich_text": {
       "type": "rich-text",
@@ -69,7 +66,10 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "type": "text",
+            "id": "heading2",
+            "default": "Headings",
+            "label": "Title"
           }
         }
       },
@@ -220,7 +220,8 @@
   },
   "order": [
     "example-section",
-    "image_banner",
+    "banner-section",
+    "cards-section",
     "rich_text",
     "featured_collection",
     "collage",

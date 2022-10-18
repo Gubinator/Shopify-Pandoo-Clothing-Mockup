@@ -1,0 +1,49 @@
+{{ 'banner-section.css' | asset_url | stylesheet_tag }}
+
+<div class="banner">
+  <div class="banner__hero">
+    <div class="hero__container">
+      <h2 class="hero__container-title">
+      {{ section.settings.title }}
+      </h2>
+      <p>{{ section.settings.description }}
+      </p>
+    </div>
+  </div>
+</div>
+<style>
+  .banner {
+    background-image: url("https:{%- if section.settings.image != blank -%} {{section.settings.image | image_url }} {%- endif-%} ");
+    background-repeat: no-repeat;
+    height: 640px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto;
+  }
+</style>
+{% schema %}
+  {
+    "name": "Banner Section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Section Image Banner"
+      }, {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Section Title"
+      },
+      {
+        "type": "textarea",
+        "id": "description",
+        "label": "description",
+        "default": "Section description"
+      }
+    ]
+  }
+{% endschema %}

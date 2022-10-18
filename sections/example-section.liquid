@@ -10,6 +10,7 @@ bababababab
   <ul>
     {% for block in section.blocks %}
       <p>{{ block.settings.heading }}</p>
+      <p>{{ block.settings.area }}</p>
     {% endfor %}
   </ul>
 </div>
@@ -45,6 +46,12 @@ bababababab
             "id": "heading",
             "default": "Headings",
             "label": "Title"
+          },
+                    {
+            "type": "textarea",
+            "id": "area",
+            "default": "Area",
+            "label": "Description"
           }
         ]
       }

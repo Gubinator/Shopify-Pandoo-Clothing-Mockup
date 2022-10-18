@@ -2886,3 +2886,8 @@ details-disclosure > details {
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
+
+
+#shopify-section-template--15444451033227__banner-section{
+  height: 40rem;
+}
