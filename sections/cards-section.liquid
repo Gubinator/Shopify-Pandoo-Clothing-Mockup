@@ -1,17 +1,20 @@
 {{ 'card-section.css' | asset_url | stylesheet_tag }}
+{{ 'glide-theme.css' | asset_url | stylesheet_tag }}
 
 <div class="card-section">
         <h1 class="card-section__title">{{ section.settings.text }}</h1>
+        {% for block in section.blocks %}
         <div class="card-section__cards">
             <div class="card">
-                <div  class="card__icon">{% for block in section.blocks %}<img src="{{ block.settings.icon| image_url }}" alt="">{% endfor %}</div>
+                <div  class="card__icon"><img src="{{ block.settings.icon| image_url }}" alt=""></div>
                 <div class="card__titles">
-                    <p>{% for block in section.blocks %}{{ block.settings.heading}}{% endfor %}</p>
-                    <p><i>{% for block in section.blocks %}{{ block.settings.heading2}}{% endfor %}</i></p>
+                    <span>{{ block.settings.heading}}</span>
+                    <span><i>{{ block.settings.heading2}}</i></span>
                 </div>
-                <div class="card__text">{% for block in section.blocks %}{{ block.settings.description}}{% endfor %}</div>
+                <div class="card__text">{{ block.settings.description}}</div>
             </div>
         </div>
+        {% endfor %}
 </div>
 
 {% schema %}
@@ -26,52 +29,38 @@
       }
     ],
     "blocks": [
-      {
-        "type": "card-title",
-        "name": "Card Title",
+            {
+        "type": "card",
+        "name": "Card",
+        "limit": 3,
         "settings": [
           {
             "type": "text",
             "id": "heading",
             "default": "Heading",
             "label": "Title"
-          }
-        ]},
-        {
-        "type": "card-subtitle",
-        "name": "Card Subtitle",
-          "settings":[
-            {
+          },
+                    {
             "type": "text",
             "id": "heading2",
-            "default": "Headings",
+            "default": "Heading",
             "label": "Subtitle"
-          }
-          ]
-          }, 
-          { 
-        "type": "card-description",
-        "name": "Card Description",
-        "settings":[ 
-         { 
-        "type": "textarea",
-        "id": "description",
-        "label": "Description",
-        "default": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
-            }
-                ]   
-        },
-        { 
-        "type": "card-icon",
-        "name": "Card icon",
-        "settings":[ 
-        { 
+          },
+                              {
+            "type": "textarea",
+            "id": "description",
+            "default": "Description textarea",
+            "label": "Description"
+          },
+                  { 
         "type": "image_picker",
         "id": "icon",
         "label": "Icon"
         }
-        ]
-                }
-        ]
+          ]
       }
+        ]
+    }
 {% endschema %}
+
+      

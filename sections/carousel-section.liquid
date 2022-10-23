@@ -1,0 +1,61 @@
+{{ 'carousel-section.css' | asset_url | stylesheet_tag }}
+
+
+<div class="carousel__section">
+  <div class="glide">
+      <h2 class="glide__title">{{section.settings.heading}}</h2>
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide" ><img src="{{section.settings.image1 | image_url }}" ></li>
+          <li class="glide__slide" ><img src="{{section.settings.image2 | image_url }}" ></li>
+          <li class="glide__slide" ><img src="{{section.settings.image3 | image_url }}" ></li>
+          <li class="glide__slide" ><img src="{{section.settings.image4 | image_url }}" ></li>
+          <li class="glide__slide" ><img src="{{section.settings.image5 | image_url }}" ></li>
+        </ul>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Carousel Section",
+    "settings": [
+        {
+            "type": "text",
+            "id":"heading",
+            "label": "Carousel mobile title"
+        },
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "Carousel image 1"
+      },
+            {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "Carousel image 2"
+      },
+            {
+        "type": "image_picker",
+        "id": "image3",
+        "label": "Carousel image 3"
+      },
+            {
+        "type": "image_picker",
+        "id": "image4",
+        "label": "Carousel image 4"
+      },
+            {
+        "type": "image_picker",
+        "id": "image5",
+        "label": "Carousel image 5"
+      }
+    ]
+  }
+{% endschema %}
+
+      

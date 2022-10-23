@@ -1,0 +1,210 @@
+.energy-section {
+  background: #333333;
+  color: #FEFEFE;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 6rem; }
+  @media (min-width: 375px) and (max-width: 640px) {
+    .energy-section {
+      padding-bottom: 3rem;
+      overflow-x: hidden; } }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .energy-section {
+      padding-bottom: 4rem;
+      overflow-x: hidden; } }
+  .energy-section h1 {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    padding: 4rem 0px 7.313rem 0px; }
+    @media (min-width: 375px) and (max-width: 640px) {
+      .energy-section h1 {
+        padding: 3rem 0 2.375rem 0;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.625rem; } }
+    @media (min-width: 640px) and (max-width: 1024px) {
+      .energy-section h1 {
+        padding: 3rem 0 2.375rem 0;
+        font-weight: 700;
+        font-size: 2.25rem;
+        line-height: 2.625rem; } }
+  .energy-section .energy-section__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8rem 0px;
+    padding-bottom: 6rem;
+    max-width: 106.5rem;
+    margin: 0 auto; }
+    @media (min-width: 375px) and (max-width: 640px) {
+      .energy-section .energy-section__container {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 1.8125rem 0;
+        padding-bottom: 0rem; } }
+    @media (min-width: 640px) and (max-width: 1024px) {
+      .energy-section .energy-section__container {
+        flex-flow: column wrap;
+        align-items: flex-start;
+        gap: 1.8125rem 0;
+        padding-bottom: 0rem; } }
+    .energy-section .energy-section__container .container__image-one {
+      width: 43.5rem;
+      height: 30rem;
+      background: #87DE87; }
+      .energy-section .energy-section__container .container__image-one img {
+        width: 41.5rem;
+        height: 30rem; }
+        @media (min-width: 640px) and (max-width: 1024px) {
+          .energy-section .energy-section__container .container__image-one img {
+            order: 0;
+            min-width: 100%;
+            padding-bottom: 12vh;
+            padding-right: 3rem; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          order: 0;
+          min-width: 100%;
+          padding-bottom: 12vh; } }
+      @media (min-width: 779px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 24vh; } }
+      @media (min-width: 850px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 32vh; } }
+      @media (min-width: 912px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 40vh; } }
+      @media (min-width: 991px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-one {
+          padding-bottom: 45vh; } }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .energy-section .energy-section__container .container__image-one {
+          order: 0;
+          min-width: 23.4375rem;
+          min-height: 23.4375rem;
+          padding-bottom: 1rem;
+          padding-right: 3rem; } }
+    .energy-section .energy-section__container .container__text {
+      max-width: 43.5rem;
+      display: flex;
+      flex-flow: column;
+      gap: .75rem;
+      font-weight: 400;
+      line-height: 1.3125rem;
+     }
+      .energy-section .energy-section__container .container__text h2 {
+        font-size: 2.25rem;
+        font-weight: 600;
+      margin-bottom: 0; }
+        .energy-section .energy-section__container .container__text span{
+          font-size: 1.125rem;
+          width: 100%;
+           }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__text {
+          margin: 0 auto; } }
+      .energy-section .energy-section__container .container__text p {
+        padding-bottom: 0.75rem;
+        line-height: 1.321rem;
+        font-size: 1.125rem; }
+      .energy-section .energy-section__container .container__text h2 {
+        color:#FEFEFE;
+        font-size: 2rem;
+        line-height: 2.625rem;
+        /*padding-bottom: 0.75rem; */}
+        @media (min-width: 375px) and (max-width: 640px) {
+          .energy-section .energy-section__container .container__text h2 {
+            text-align: center; } }
+        @media (min-width: 640px) and (max-width: 1024px) {
+          .energy-section .energy-section__container .container__text h2 {
+            text-align: center; } }
+    .energy-section .energy-section__container .container__text:first-child {
+      padding-left: 9rem; }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .energy-section .energy-section__container .container__text:first-child {
+          order: 1;
+          padding: 0 2rem 0 2rem; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__text:first-child {
+          order: 1;
+          padding: 0 2rem 0 2rem; } }
+    .energy-section .energy-section__container #container__text-two {
+      padding: 0 9rem 0 0; }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .energy-section .energy-section__container #container__text-two {
+          order: 3;
+          padding: 0 2rem 0 2rem; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container #container__text-two {
+          order: 3;
+          padding: 0 2rem 4rem 2rem;
+          margin: 0 auto; } }
+    .energy-section .energy-section__container .container__image-two {
+      width: 43.5rem;
+      height: 30rem;
+      background: #87DE87; 
+      padding-left: 2rem;}
+      .energy-section .energy-section__container .container__image-two img {
+        width: 41.5rem;
+        height: 30rem;  
+        }
+        @media (min-width: 375px) and (max-width: 640px) {
+          .energy-section .energy-section__container .container__image-two img {
+            min-width: 23.4375rem;
+            padding-left: 0rem; } }
+        @media (min-width: 640px) and (max-width: 1024px) {
+          .energy-section .energy-section__container .container__image-two img {
+            min-width: 100%;
+            padding-left: 0rem;
+            object-fit: cover; } }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .energy-section .energy-section__container .container__image-two {
+          order: 2;
+          min-width: 23.4375rem;
+          padding-bottom: 1rem;
+          padding-right: 3rem; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .energy-section .energy-section__container .container__image-two {
+          order: 2;
+          min-width: 100%;
+          padding-bottom: 12vh;
+          padding-right: 3rem; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 779px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 24vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 850px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 32vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 912px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 40vh; } }
+  @media (min-width: 640px) and (max-width: 1024px) and (min-width: 991px) and (max-width: 1024px) {
+    .energy-section .energy-section__container .container__image-two {
+      padding-bottom: 45vh; } }
+
+  .energy-section .energy-section__button {
+    display: flex;
+    justify-content: center; }
+    @media (min-width: 375px) and (max-width: 640px) {
+      .energy-section .energy-section__button {
+        display: none; } }
+    .energy-section .energy-section__button button {
+      font-size: 1.125rem;
+      line-height: 1.313rem;
+      text-align: center;
+      background: #87DE87;
+      border-radius: 0.75rem;
+      border: none;
+      width: 16.5rem;
+      height: 4.5rem;
+      cursor: pointer; }
+      .energy-section .energy-section__button button p {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 1.313rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333333; }

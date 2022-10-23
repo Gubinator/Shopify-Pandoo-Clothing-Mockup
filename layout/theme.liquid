@@ -7,6 +7,9 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    {{ 'glide-core.css' | asset_url | stylesheet_tag }}
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -237,6 +240,26 @@
     </ul>
 
     <script>
+window.addEventListener('DOMContentLoaded', () => {
+  const config = {
+    type: "carousel",
+    perView: 5,
+    gap: 24,
+    focusAt: 'center',
+    breakpoints: {
+      640:{
+        perView: 3
+      },
+      1024:{
+        perView: 5
+      }
+    }
+}
+
+new Glide(".glide", config).mount();
+  })
+
+
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',

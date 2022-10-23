@@ -1,0 +1,39 @@
+.carousel__section{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16.375rem 0 7.5rem 0;
+  color: #333333;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden; 
+}
+
+.glide .glide__slides {
+    height: 20.0625rem; }
+.glide .glide__slides .glide__slide {
+      height: 20.0625rem;
+        width: 34.5rem ; }
+.glide .glide__slides .glide__slide img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
+.glide .glide__slides img {
+      width: 100%;
+      object-fit: cover; }
+.glide h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+    text-align: center;
+    padding-bottom: 2.875rem; }
+    @media (min-width: 1024px) {
+.glide h2 {
+        display: none; } 
+    }
+.glide .glide__arrows {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center; }
+ 

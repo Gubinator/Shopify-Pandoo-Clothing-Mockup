@@ -23,6 +23,7 @@
     text-align: center;
     font-size: 3rem;
     line-height: 3.5rem;
+    font-weight: 700;
     padding-bottom: 5.375rem; }
     @media (min-width: 375px) and (max-width: 640px) {
       .card-section .card-section__title {
@@ -50,7 +51,14 @@
         margin: 0 auto; } }
     .card-section .card-section__cards .card .card__titles {
       font-size: 1.5rem;
-      line-height: 1.75rem; }
+      line-height: 1.75rem; 
+      display: flex;
+    flex-flow: column wrap;
+    gap: .625rem;}
+
+    .card-section .card-section__cards .card .card__titles span:first-child {
+      font-weight: 600;
+    }
       @media (min-width: 375px) and (max-width: 640px) {
         .card-section .card-section__cards .card .card__titles {
           margin: 0 auto; } }
@@ -93,7 +101,11 @@
       border-radius: 50%;
       background: #87DE87;
       margin: 0px 0px 1.063rem 2rem;
-      position: relative; }
+      position: relative; 
+      display: flex;
+      flex-flow: row wrap;
+    justify-content: center;
+  align-items: center;}
       @media (min-width: 375px) and (max-width: 640px) {
         .card-section .card-section__cards .card .card__icon {
           grid-column: 1/4;
@@ -106,8 +118,7 @@
           justify-self: center; } }
       .card-section .card-section__cards .card .card__icon img {
         width: 4.375rem;
-        padding-left: 1.563rem;
-        padding-top: 1.563rem; }
+         }
       .card-section .card-section__cards .card .card__icon .card__icon-charger {
         padding-top: 1.875rem; }
     .card-section .card-section__cards .card .card__text {
