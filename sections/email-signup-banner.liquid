@@ -89,10 +89,10 @@
                       required
                     >
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                      {{ 'newsletter.label' | t }}
+                      example@email.com
                     </label>
-                    <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                      {% render 'icon-arrow' %}
+                    <button type="submit" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                      Send
                     </button>
                   </div>
                   {%- if form.errors -%}
@@ -382,7 +382,8 @@
     }
   ],
   "templates": [
-    "password"
+    "password",
+    "index"
   ]
 }
 {% endschema %}

@@ -1,0 +1,80 @@
+.footer {
+  background: #333333;
+  width: 100%;
+  padding: 0.813rem 6.75rem 0.875rem 6.75rem;
+  margin: 0 auto; }
+  @media (min-width: 375px) and (max-width: 640px) {
+    .footer {
+      padding: 1rem 0 1rem 0; } }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .footer {
+      padding: 1rem 0 1rem 0; } }
+  .footer .footer-text {
+    color: #FEFEFE;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media (min-width: 375px) and (max-width: 640px) {
+      .footer .footer-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0.75rem;
+        margin: 0 auto;
+        text-align: center;
+        column-gap: 0.75rem; } }
+    @media (min-width: 640px) and (max-width: 1024px) {
+      .footer .footer-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 0.75rem;
+        margin: 0 auto;
+        text-align: center;
+        column-gap: 0.75rem; } }
+    .footer .footer-text a:first-child {
+      padding-left: 6.75rem; }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .footer .footer-text a:first-child {
+          padding-left: 0.5rem;
+          order: 3;
+          grid-column: 1/3;
+          justify-self: center; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .footer .footer-text a:first-child {
+          padding-left: 0.5rem;
+          order: 3;
+          grid-column: 1/3;
+          justify-self: center; } }
+    .footer .footer-text a:nth-child(2) {
+      margin-left: auto; }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .footer .footer-text a:nth-child(2) {
+          margin-left: 0;
+          order: 1;
+          justify-self: end; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .footer .footer-text a:nth-child(2) {
+          margin-left: 0;
+          order: 1;
+          justify-self: end; } }
+    .footer .footer-text a:last-child {
+      padding-right: 6.75rem;
+      padding-left: 2rem; }
+      @media (min-width: 375px) and (max-width: 640px) {
+        .footer .footer-text a:last-child {
+          padding-left: 0;
+          padding-right: 0rem;
+          order: 2;
+          justify-self: start; } }
+      @media (min-width: 640px) and (max-width: 1024px) {
+        .footer .footer-text a:last-child {
+          padding-left: 0;
+          padding-right: 0rem;
+          order: 2;
+          justify-self: start; } }
+
+          .footer a:hover, a:visited, a:link, a:active {
+            text-decoration: none;
+            color: inherit; }

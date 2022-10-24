@@ -1,0 +1,32 @@
+{{ 'footer-section.css' | asset_url | stylesheet_tag }}
+
+     <div class="footer">
+            <div class="footer-text">
+            {% for block in section.blocks %}
+                <a href="">{{ block.settings.footer__text}}</a>
+            {% endfor %}
+            </div>
+        </div>
+
+{% schema %}
+  {
+    "name": "Footer", 
+        "blocks": [
+            {
+        "type": "text",
+        "name": "Text",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "text",
+            "id": "footer__text",
+            "default": "Label",
+            "label": "Footer label"
+          }
+          ]
+      }
+        ]
+    }
+{% endschema %}
+
+      

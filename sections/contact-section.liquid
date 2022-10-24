@@ -1,0 +1,209 @@
+{{ 'contact-section.css' | asset_url | stylesheet_tag }}
+
+    <div class="contact-section">
+      <div class="contact-section__logo">
+      {% if block.settings.logo == blank %}
+      {% render 'logo-pandoo' %}
+      {% else %} 
+      <img src="{{ section.settings.logo | image_url }}" alt="logo">
+      {% endif %}
+      </div>
+        <div class="contact-section__containers">
+            {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'column1' %}
+            <div class="contact-section__containers-info">
+                <h2>{{ block.settings.heading1col1}}</h2>
+                <p>{{ block.settings.label1col1}}</p>
+                <p>{{ block.settings.label2col1}}</p>
+                <p>{{ block.settings.label3col1}}</p>
+                <p>{{ block.settings.label4col1}}</p>
+            </div>
+                {% endcase %}
+            {% endfor %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'column2' %}
+            <div class="contact-section__containers-links">
+                <h3>{{ block.settings.heading1col2}}</h3>
+                <a href="">{{ block.settings.label1col2}}</a>
+                <a href="">{{ block.settings.label2col2}}</a>
+                <a href="">{{ block.settings.label2col2}}</a>
+            </div>
+              {% endcase %}
+            {% endfor %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'column3' %}
+            <div class="contact-section__containers-links">
+                <h3>{{ block.settings.heading1col3}}</h3>
+                <a href="">{{ block.settings.label1col3}}</a>
+                <a href="">{{ block.settings.label2col3}}</a>
+                <a href="">{{ block.settings.label3col3}}</a>
+            </div>
+                {% endcase %}
+            {% endfor %}
+            {% for block in section.blocks %}
+                {% case block.type %}
+                    {% when 'column4' %}
+            <div class="contact-section__containers-follow">
+                <h3>{{ block.settings.heading1col4}}</h3>
+                <div class="icons">
+              {% if block.settings.social_icon1 == blank %}
+                <a href="">{% render 'iconFigma-facebook' %}</a>
+              {% endif %}
+              {% if block.settings.social_icon2 == blank %}
+                <a href="">{% render 'iconFigma-twitter' %}</a>
+              {% endif %}
+              {% if block.settings.social_icon3 == blank %}
+                <a href="">{% render 'iconFigma-linkedin' %}</a>
+              {% endif %} 
+              {% if block.settings.social_icon3 == blank %}
+                <a href="">{% render 'iconFigma-youtube' %}</a>
+              {% endif %}
+              </div>
+            </div>
+              {% endcase %}
+            {% endfor %}
+        </div>
+    </div>
+
+{% schema %}
+  {
+    "name": "Contact Section",
+    "settings": [
+           {
+        "type": "image_picker",
+        "id": "logo",
+        "label":"Logo"
+      }
+    ], 
+        "blocks": [
+            {
+        "type": "column1",
+        "name": "Column 1",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading1col1",
+            "default": "Heading",
+            "label": "Heading"
+          },
+                    {
+            "type": "text",
+            "id": "label1col1",
+            "label": "Column 1, label 1"
+          },
+            {
+            "type": "text",
+            "id": "label2col1",
+            "label": "Column 1, label 2"
+          },
+            {
+            "type": "text",
+            "id": "label3col1",
+            "label": "Column 1, label 3"
+          },
+          {
+            "type": "text",
+            "id": "label4col1",
+            "label": "Column 1, label 4"
+          }
+          ]
+      },
+      {
+        "type": "column2",
+        "name": "Column 2",
+        "limit": 1,
+        "settings": [
+                    {
+            "type": "text",
+            "id": "heading1col2",
+            "default": "Heading",
+            "label": "Subheading"
+          },
+                    {
+            "type": "text",
+            "id": "label1col2",
+            "label": "Column 2, label 1"
+          },
+            {
+            "type": "text",
+            "id": "label2col2",
+            "label": "Column 2, label 2"
+          },
+            {
+            "type": "text",
+            "id": "label3col2",
+            "label": "Column 2, label 3"
+          }
+          ]
+      },
+            {
+        "type": "column3",
+        "name": "Column 3",
+        "limit": 1,
+        "settings": [
+                    {
+            "type": "text",
+            "id": "heading1col3",
+            "default": "Heading",
+            "label": "Subheading"
+          },
+                    {
+            "type": "text",
+            "id": "label1col3",
+            "label": "Column 3, label 1"
+          },
+            {
+            "type": "text",
+            "id": "label2col3",
+            "label": "Column 3, label 2"
+          },
+            {
+            "type": "text",
+            "id": "label3col3",
+            "label": "Column 3, label 3"
+          }
+          ]
+      },
+            {
+        "type": "column4",
+        "name": "Column 4",
+        "limit": 1,
+        "settings": [
+                    {
+            "type": "text",
+            "id": "heading1col4",
+            "default": "Heading",
+            "label": "Subheading"
+          },
+                    {
+            "type": "image_picker",
+            "id": "social_icon1",
+            "label": "Social icon"
+          },
+            {
+            "type": "image_picker",
+            "id": "social_icon2",
+            "label": "Social icon"
+          },
+            {
+            "type": "image_picker",
+            "id": "social_icon3",
+            "label": "Social icon"
+          },
+                      {
+            "type": "image_picker",
+            "id": "social_icon4",
+            "label": "Social icon"
+          }
+          ]
+      }
+        ]
+
+    }
+{% endschema %}
+
+      
