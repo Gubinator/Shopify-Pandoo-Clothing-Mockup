@@ -1,5 +1,5 @@
 .footer {
-  background: #333333;
+  background: rgb(var(--color-base-accent-1)); 
   width: 100%;
   padding: 0.813rem 6.75rem 0.875rem 6.75rem;
   margin: 0 auto; }
@@ -10,7 +10,7 @@
     .footer {
       padding: 1rem 0 1rem 0; } }
   .footer .footer-text {
-    color: #FEFEFE;
+    color: rgb(var(--color-base-text));
     font-weight: 400;
     font-size: 1.125rem;
     line-height: 1.313rem;

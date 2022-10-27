@@ -1,22 +1,29 @@
 {{ 'banner-section.css' | asset_url | stylesheet_tag }}
 
-<div class="banner">
-  <div class="banner__hero">
+<div class="bannerSection">
+  <div class="bannerSection__hero">
     <div class="hero__container">
-      <h2 class="hero__container-title">
-      {{ section.settings.title }}
-      </h2>
-      <p>{{ section.settings.description }}
-      </p>
+    <h2 class="hero__container-title">{{ section.settings.title }}</h2>
+    <p>{{ section.settings.description }}</p>
     </div>
   </div>
 </div>
+<div class="bannerSection-mobile">
+    <img src="{{section.settings.image | image_url }}" alt="">  
+    <div class="bannerSection-mobile__container">
+        <div class="container__text">
+            <h1 class="hero__container-title">{{ section.settings.title }}</h1>
+            <p>{{ section.settings.description }}</p>
+        </div>
+    </div>
+</div>
+
 <style>
   #shopify-section-template--15444451033227__banner-section{
     height:640px;
     width: 100%;
   }
-  .banner {
+  .bannerSection {
     background-image: url("https:{%- if section.settings.image != blank -%} {{section.settings.image | image_url }} {%- endif-%} ");
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,6 +35,12 @@
     width: 100%;
     margin: 0 auto;
   }
+
+    @media (min-width: 375px) and (max-width: 640px) {
+    .bannerSection {
+      height: 28.29%; } 
+      .bannerSection .bannerSection__hero{
+      display: none !important; }}
 </style>
 {% schema %}
   {

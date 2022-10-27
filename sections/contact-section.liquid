@@ -28,7 +28,7 @@
                 <h3>{{ block.settings.heading1col2}}</h3>
                 <a href="">{{ block.settings.label1col2}}</a>
                 <a href="">{{ block.settings.label2col2}}</a>
-                <a href="">{{ block.settings.label2col2}}</a>
+                <a href="">{{ block.settings.label3col2}}</a>
             </div>
               {% endcase %}
             {% endfor %}
@@ -51,15 +51,49 @@
                 <div class="icons">
               {% if block.settings.social_icon1 == blank %}
                 <a href="">{% render 'iconFigma-facebook' %}</a>
+              {% else %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'column4' -%}
+                <a href=""><img src="{{ block.settings.social_icon1 | image_url }}"></a>
+                    {%- endcase -%}
+                  {%- endfor -%}
               {% endif %}
               {% if block.settings.social_icon2 == blank %}
                 <a href="">{% render 'iconFigma-twitter' %}</a>
+              {% else %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'column4' -%}
+              <a href=""><img src="{{ block.settings.social_icon2 | image_url }}"></a>
+                    {%- endcase -%}
+                  {%- endfor -%}
               {% endif %}
+              
+              
               {% if block.settings.social_icon3 == blank %}
                 <a href="">{% render 'iconFigma-linkedin' %}</a>
-              {% endif %} 
-              {% if block.settings.social_icon3 == blank %}
+              
+              {% else %}
+               {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'column4' -%}
+                   <a href=""><img src="{{ block.settings.social_icon3 | image_url }}"></a>
+                    {%- endcase -%}
+                  {%- endfor -%}
+              {% endif %}
+              
+              
+              {% if block.settings.social_icon4 == blank %}
                 <a href="">{% render 'iconFigma-youtube' %}</a>
+              
+              {% else %}
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'column4' -%}
+                <a href=""><img src="{{ block.settings.social_icon4 | image_url }}"></a>
+                      {%- endcase -%}
+                {%- endfor -%}
               {% endif %}
               </div>
             </div>

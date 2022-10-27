@@ -1,8 +1,8 @@
 .contact-section {
-  background: #87DE87;
+  background: rgb(var(--color-base-accent-2));
   width: 100%;
   margin: 0 auto;
-  color: #333333;
+  color: rgb(var(--color-base-accent-1));
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 1.313rem;
@@ -14,13 +14,29 @@
         padding: 0 0 1.9169rem 0;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center; } }
+        justify-content: center;
+        } }
     @media (min-width: 640px) and (max-width: 1024px) {
       .contact-section .contact-section__logo {
         padding: 0 0 1.9169rem 0;
         display: flex;
         flex-flow: row wrap;
-        justify-content: center; } }
+        justify-content: center; 
+        } }
+
+        
+  @media (min-width: 375px) and (max-width: 640px) {
+    .contact-section__logo svg{
+      margin-right: 0 !important;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .contact-section__logo svg{
+      margin-right: 0 !important;
+    }
+  }
+
   .contact-section .contact-section__containers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -50,6 +66,7 @@
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 1.75rem;
+        color: rgb(var(--color-base-accent-1));
         padding-bottom: 0.625rem; }
       .contact-section .contact-section__containers .contact-section__containers-info p {
         padding-bottom: 0.625rem; }
@@ -77,7 +94,8 @@
       .contact-section .contact-section__containers .contact-section__containers-links h3 {
         font-weight: 600;
         padding-bottom: 0.625rem; 
-        font-size: 1.125rem;}
+        font-size: 1.125rem;
+        color: rgb(var(--color-base-accent-1));}
     .contact-section .contact-section__containers .contact-section__containers-follow {
       padding-right: 15.75rem;
       display: flex;
@@ -116,7 +134,28 @@
     width: 3rem;
   }
 
+  .contact-section__containers-follow a img{
+    height: 3rem;
+    width: 3rem;
+  }
+
   .contact-section__logo svg{
-    /*width: 13.9375rem;
-    height: 5.4375rem;*/
+    width: 13.9375rem;
+    height: 5.4375rem;
+    display: block;
+    margin-right:auto ;
+  }
+
+  .contact-section_logo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start !important;
+  }
+
+  .contact-section__containers-info h2, .contact-section__containers-info p{
+    margin: 0 !important;
+  }
+
+  .contact-section h3{
+    margin: 0 !important;
   }

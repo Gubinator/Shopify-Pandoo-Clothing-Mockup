@@ -1,25 +1,21 @@
 
-  @media (min-width: 640px) and (max-width: 1024px) {
-    .banner {
-      background-position: 75% 50%; } }
-  @media (min-width: 375px) and (max-width: 640px) {
-    .banner {
-      display: none; } }
-  .banner .banner__hero {
+
+
+  .bannerSection .bannerSection__hero {
     width: 39.188rem;
     max-width: 39.188rem;
     height: 14.25rem;
     background: #87DE87;
     margin-left: 12.25rem; }
     @media (min-width: 640px) and (max-width: 1024px) {
-      .banner .banner__hero {
+      .bannerSection .bannerSection__hero {
         display: none; } }
     @media (min-width: 375px) and (max-width: 640px) {
-      .banner .banner__hero {
+      .bannerSection .bannerSection__hero {
         margin-left: 0rem;
         padding-bottom: 4rem;
         width: 23.4375rem; } }
-  .banner .hero__container {
+  .bannerSection .hero__container {
     width: 37.188rem;
     height: 14.25rem;
     margin-left: 2rem;
@@ -31,7 +27,7 @@
     font-size: 1.125rem;
     line-height: 1.313rem; }
     @media (min-width: 375px) and (max-width: 640px) {
-      .banner .hero__container {
+      .bannerSection .hero__container {
         height: 14.75rem;
         width: 19.5rem;
         max-width: 23.438rem;
@@ -41,7 +37,7 @@
         flex-flow: row wrap;
         padding: 0 1.9375rem 2rem 2rem;
         font-size: 1rem; } }
-    .banner .hero__container .hero__container-title {
+    .bannerSection .hero__container .hero__container-title {
       padding-top: 2rem;
       /*padding-bottom: 1.5rem;*/
       font-weight: 600;
@@ -50,7 +46,64 @@
       color: white;
       margin: 0; }
       @media (min-width: 375px) and (max-width: 640px) {
-        .banner .hero__container .hero__container-title {
+        .bannerSection .hero__container .hero__container-title {
           font-size: 2rem;
           line-height: 2.625rem;
           padding-bottom: 1rem; } }
+
+
+
+.bannerSection-mobile {
+display: flex;
+flex-flow: column wrap;
+align-content: center;
+margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+.bannerSection-mobile {
+  display: none; } }
+@media (min-width: 640px) and (max-width: 1024px) {
+.bannerSection-mobile img {
+  display: none; } }
+.bannerSection-mobile .bannerSection-mobile__container {
+padding-bottom: 3.0769rem;
+background: #87DE87; 
+width: 100%;}
+.bannerSection-mobile img{
+  width: 100%;
+  height: 28.9375rem;
+  object-fit: cover;
+}
+.bannerSection-mobile .bannerSection-mobile__container .container__text {
+  background: #333333;
+  color: #FEFEFE;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 2rem 2rem 0 2rem; }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .bannerSection-mobile .bannerSection-mobile__container .container__text {
+      padding: 2rem 4rem 0 4rem; } }
+      .bannerSection-mobile .bannerSection-mobile__container .container__text p {
+        margin:0; } 
+.bannerSection-mobile .bannerSection-mobile__container h1 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+  margin: 0; }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .bannerSection-mobile .bannerSection-mobile__container h1 {
+      font-size: 2.25rem;
+    font-weight: 600; } }
+.bannerSection-mobile .bannerSection-mobile__container p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem; }
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .bannerSection-mobile .bannerSection-mobile__container p {
+      font-size: 1.25rem; } }

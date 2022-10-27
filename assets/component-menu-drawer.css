@@ -50,6 +50,15 @@ menu-drawer > details[open] > summary::before {
   );
 }
 
+.menu-drawer{
+  color: rgb(var(--color-base-accent-1));
+  font-weight: 600;
+}
+
+.menu-drawer li:hover{
+  color: rgb(var(--color-base-accent-1)) !important;
+}
+
 .js .menu-drawer {
   height: calc(100vh - 100%);
   height: calc(

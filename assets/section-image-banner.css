@@ -318,6 +318,10 @@
   }
 }
 
+.field{
+  width: 82.85%
+}
+
 .banner__box {
   padding: 4rem 3.5rem;
   position: relative;

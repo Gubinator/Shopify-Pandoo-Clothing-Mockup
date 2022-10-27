@@ -2,35 +2,79 @@
   "sections": {
     "banner-section": {
       "type": "banner-section",
+      "settings": {
+        "title": "Section Title",
+        "description": "Section description"
+      }
+    },
+    "cards-section": {
+      "type": "cards-section",
+      "settings": {
+        "text": "Section Title"
+      }
+    },
+    "energy-section": {
+      "type": "energy-section",
+      "settings": {
+        "heading": "Section Title",
+        "linktext": "Click Here"
+      }
+    },
+    "carousel-section": {
+      "type": "carousel-section",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "email-signup-banner": {
+      "type": "email-signup-banner",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "show_background_image": true,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "contact-section": {
+      "type": "contact-section",
+      "settings": {
+      }
+    },
+    "footer-section": {
+      "type": "footer-section",
+      "blocks": {
+        "745cfedd-b0a4-4b14-8401-1dee7fce7763": {
+          "type": "text",
           "settings": {
-            "heading": "Image banner"
+            "footer__text": "Label"
           }
         },
-        "cards-section": {
-          "type": "cards-section",
-              "blocks": {
-                "card": {
-                  "type": "card",
-                  "settings": {
-                  }
-                }
-              }
-            },
-        "energy-section": {
-          "type": "energy-section"
-              },
-        "carousel-section": {
-          "type": "carousel-section"
-              },
-        "email-signup-banner": {
-          "type": "email-signup-banner"
-              },
-        "contact-section": {
-          "type": "contact-section"
-              },
-        "footer-section": {
-          "type": "footer-section"
-              }
+        "7337fe4c-5d62-4b01-9dc2-610b3a3fe675": {
+          "type": "text",
+          "settings": {
+            "footer__text": "Label"
+          }
+        },
+        "78c697e0-1335-4bf8-8ea5-bf556af26280": {
+          "type": "text",
+          "settings": {
+            "footer__text": "Label"
+          }
+        }
+      },
+      "block_order": [
+        "745cfedd-b0a4-4b14-8401-1dee7fce7763",
+        "7337fe4c-5d62-4b01-9dc2-610b3a3fe675",
+        "78c697e0-1335-4bf8-8ea5-bf556af26280"
+      ],
+      "settings": {
+      }
+    }
   },
   "order": [
     "banner-section",

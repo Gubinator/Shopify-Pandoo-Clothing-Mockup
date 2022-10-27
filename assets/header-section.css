@@ -1,0 +1,27 @@
+.page-width{
+  max-width: 100%;
+}
+
+.header--middle-right{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.header{
+  padding: 0 6.75rem 0 6.75rem;
+
+}
+
+
+.list-menu a span {
+  color: rgb(var(--color-base-accent-1));
+  font-weight: 600;
+  font-size: 1.125rem !important;
+  line-height: 1.3125rem !important;
+  font-family: var(--font-body-family) !important;
+}
+
+.menu-drawer__menu-item, .list-menu__item {
+  color: rgb(var(--color-base-accent-1));
+}
