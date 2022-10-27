@@ -68,7 +68,7 @@ margin: 0 auto;
   display: none; } }
 .bannerSection-mobile .bannerSection-mobile__container {
 padding-bottom: 3.0769rem;
-background: #87DE87; 
+background: rgb(var(--color-base-accent-2)); 
 width: 100%;}
 .bannerSection-mobile img{
   width: 100%;
@@ -76,8 +76,8 @@ width: 100%;}
   object-fit: cover;
 }
 .bannerSection-mobile .bannerSection-mobile__container .container__text {
-  background: #333333;
-  color: #FEFEFE;
+  background: rgb(var(--color-base-accent-1)); 
+  color: rgb(var(--color-base-text)); 
   display: flex;
   flex-flow: column wrap;
   align-items: center;
