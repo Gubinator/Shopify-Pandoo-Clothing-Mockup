@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "banner-section": {
+      "type": "banner-section",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/energy-2181904_1920.jpg",
+        "title": "Hero Title",
+        "description": "I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+      }
+    },
+    "cards-section": {
+      "type": "cards-section",
+      "blocks": {
+        "f9b869bf-e494-4587-8747-54702b6130fa": {
+          "type": "card",
+          "settings": {
+            "heading": "Card Title",
+            "heading2": "Card Subtitle",
+            "description": "You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers.",
+            "icon": "shopify:\/\/shop_images\/world_1.png"
+          }
+        },
+        "275b6ec0-774d-4b6f-add2-ba93d28ed961": {
+          "type": "card",
+          "settings": {
+            "heading": "Card Title",
+            "heading2": "Card Subtitle",
+            "description": "You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers.",
+            "icon": "shopify:\/\/shop_images\/solar_1.png"
+          }
+        },
+        "468ea275-decd-4483-9680-701ab3cca065": {
+          "type": "card",
+          "settings": {
+            "heading": "Card Title",
+            "heading2": "Card Subtitle",
+            "description": "You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers.",
+            "icon": "shopify:\/\/shop_images\/wind_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "f9b869bf-e494-4587-8747-54702b6130fa",
+        "275b6ec0-774d-4b6f-add2-ba93d28ed961",
+        "468ea275-decd-4483-9680-701ab3cca065"
+      ],
+      "settings": {
+        "text": "Section Title"
+      }
+    },
+    "energy-section": {
+      "type": "energy-section",
+      "blocks": {
+        "1f62c05f-3064-4aa0-8a06-28f22f9fb9a7": {
+          "type": "text1",
+          "settings": {
+            "heading1": "Subsection Title",
+            "text1p1": "You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.",
+            "text1p2": "Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!",
+            "text1p3": "What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+          }
+        },
+        "53e616f3-3a1c-4757-af71-1e5fb84a1d08": {
+          "type": "text2",
+          "settings": {
+            "heading2": "Subsection Title",
+            "text2p1": "You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.",
+            "text2p2": "Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!",
+            "text2p3": "What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony."
+          }
+        }
+      },
+      "block_order": [
+        "1f62c05f-3064-4aa0-8a06-28f22f9fb9a7",
+        "53e616f3-3a1c-4757-af71-1e5fb84a1d08"
+      ],
+      "settings": {
+        "heading": "Section Title",
+        "linktext": "Click Here",
+        "image1": "shopify:\/\/shop_images\/pinwheel-50512_1280.jpg",
+        "image2": "shopify:\/\/shop_images\/photovoltaic-system-2742302_1920.jpg"
+      }
+    },
+    "carousel-section": {
+      "type": "carousel-section",
+      "settings": {
+        "heading": "Section Title",
+        "image1": "shopify:\/\/shop_images\/photovoltaic-system-2742302_1920.jpg",
+        "image2": "shopify:\/\/shop_images\/pinwheel-50512_1280.jpg",
+        "image3": "shopify:\/\/shop_images\/energy-2181904_1920.jpg",
+        "image4": "shopify:\/\/shop_images\/panda2.jpg",
+        "image5": "shopify:\/\/shop_images\/panda1.jpg"
+      }
+    },
+    "email-signup-banner": {
+      "type": "email-signup-banner",
+      "blocks": {
+        "b939d580-3df0-44ac-854d-37bf5829bd67": {
+          "type": "heading",
+          "settings": {
+            "heading": "Section Title",
+            "heading_size": "h1"
+          }
+        },
+        "24717de6-3558-4bab-8606-255112ca191d": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called \"Arthur King,\" you and all your silly English K-nig-hts.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "25f39ae1-db61-443b-baa8-605b8c3cd1da": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "b939d580-3df0-44ac-854d-37bf5829bd67",
+        "24717de6-3558-4bab-8606-255112ca191d",
+        "25f39ae1-db61-443b-baa8-605b8c3cd1da"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "show_background_image": true,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "contact-section": {
+      "type": "contact-section",
+      "blocks": {
+        "b47a8399-1ffc-47af-b961-a8f96bb38225": {
+          "type": "column1",
+          "settings": {
+            "heading1col1": "Company Name",
+            "label1col1": "Kralja Zvonimira 35",
+            "label2col1": "21000 Split",
+            "label3col1": "hello@companyname.com",
+            "label4col1": "+385 21 323 044"
+          }
+        },
+        "deeeaa82-3658-4ec8-8ec1-4871be83a903": {
+          "type": "column2",
+          "settings": {
+            "heading1col2": "Products",
+            "label1col2": "Pricing",
+            "label2col2": "Testimonials",
+            "label3col2": "Get It Now"
+          }
+        },
+        "0789ceb4-84fb-4263-962d-169048d3fc8a": {
+          "type": "column3",
+          "settings": {
+            "heading1col3": "Company",
+            "label1col3": "About",
+            "label2col3": "Blog",
+            "label3col3": "Contact"
+          }
+        },
+        "9726d852-e6cc-4158-8270-11484b9d1145": {
+          "type": "column4",
+          "settings": {
+            "heading1col4": "Follow Us"
+          }
+        }
+      },
+      "block_order": [
+        "b47a8399-1ffc-47af-b961-a8f96bb38225",
+        "deeeaa82-3658-4ec8-8ec1-4871be83a903",
+        "0789ceb4-84fb-4263-962d-169048d3fc8a",
+        "9726d852-e6cc-4158-8270-11484b9d1145"
+      ],
+      "settings": {
+      }
+    },
+    "footer-section": {
+      "type": "footer-section",
+      "blocks": {
+        "745cfedd-b0a4-4b14-8401-1dee7fce7763": {
+          "type": "text",
+          "settings": {
+            "footer__text": "2020 © PanDoo"
+          }
+        },
+        "7337fe4c-5d62-4b01-9dc2-610b3a3fe675": {
+          "type": "text",
+          "settings": {
+            "footer__text": "GDPR"
+          }
+        },
+        "78c697e0-1335-4bf8-8ea5-bf556af26280": {
+          "type": "text",
+          "settings": {
+            "footer__text": "Privacy"
+          }
+        }
+      },
+      "block_order": [
+        "745cfedd-b0a4-4b14-8401-1dee7fce7763",
+        "7337fe4c-5d62-4b01-9dc2-610b3a3fe675",
+        "78c697e0-1335-4bf8-8ea5-bf556af26280"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner-section",
+    "cards-section",
+    "energy-section",
+    "carousel-section",
+    "email-signup-banner",
+    "contact-section",
+    "footer-section"
+  ]
+}
